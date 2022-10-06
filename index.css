@@ -26,7 +26,7 @@ body{
 
 }
 
-.destop-main{
+.desktop-main{
     position: absolute;
     width: 40%;
     height: 100%;
@@ -91,6 +91,60 @@ body{
     bottom: 80px;
     left: 30px;
     font-size: 25px;
-    letter-spacing: 5px;
-    
+    letter-spacing: 5px;   
 }
+
+.cardholder-display{
+    bottom: 30px;
+    left: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.expiry-month-display{
+    bottom: 30px;
+    right: 85px;
+    font-size: 0.9em;
+}
+
+.expiry-year-display{
+    bottom: 30px;
+    right: 30px;
+    font-size: 0.9em;
+}
+
+.cvc-display{
+    position: absolute;
+    right: 60px;
+    bottom: 117px;
+
+}
+
+
+form{
+    height: 350px;
+}
+
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+label .card-number, label .expiry-date, label .cvc{
+    margin-top: 30px;
+}
+
+input{
+    outline: 0px solid hsl(249, 99%, 64%);
+    border-top-color: hsl(249, 99%, 64%);
+    border-right-color: hsl(278, 94%, 30%);
+    border-bottom-color: hsl(249, 99%, 64%);
+    border-left-color: hsl(278, 94%, 30%);
+}
+
+input::placeholder{font-weight: 300;}
+
+#
