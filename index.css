@@ -1,11 +1,11 @@
-.attribution { font-size: 11px; text-align: center; 
+/* .attribution { font-size: 11px; text-align: center; 
 
 }
 
 
 .attribution a { color: hsl(228, 45%, 44%); 
 
-}
+} */
 
 
 :root{--debug: 1px solid red}
@@ -21,19 +21,20 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     font-size: 18px;
 
 }
 
 .desktop-main{
     position: absolute;
-    width: 40%;
+    width: 35%;
     height: 100%;
 }
 
 .mobile-main{
     display: none;
+    width: 375px;
 }
 
 .container{
@@ -123,6 +124,8 @@ body{
 
 form{
     height: 350px;
+    padding-top: 10em;
+    padding-left: 15px;
 }
 
 label{
@@ -187,7 +190,7 @@ button{
     border-radius: 5px;
     padding: 10px 0;
     font-size: 16px;
-    background-color: cc;
+    background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     cursor: pointer;
     transition: background-color 0.2s ease-in;
@@ -230,5 +233,11 @@ button:hover{
         .card-front{top: 100px; left: 30px;}     
         .card-number-display{font-size: 14px; bottom: 60px; letter-spacing: 4px;}
         .cardholder-display{font-size: 12px;}
-        .expiry-month-display, .expiry-year-display {}
+        .expiry-month-display,.expiry-year-display, .expiry-divider-display {
+            font-size: 12px;
+        }
+        .expiry-year-display{right: 38px;}
+        .cvc-display{font-size: 12px;}
+        .cvc-display{bottom: unset; top: 75px; right: 38px;}
+        .card-details{position: relative; flex: 0 1 65%;}
     }
