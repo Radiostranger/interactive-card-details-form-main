@@ -7,7 +7,6 @@
 
 } */
 
-
 :root{--debug: 1px solid red}
 
 *{
@@ -23,6 +22,7 @@ body{
     align-items: center;
     justify-content: left;
     font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
 
 }
 
