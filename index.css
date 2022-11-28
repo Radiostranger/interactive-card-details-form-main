@@ -26,15 +26,22 @@ body{
 
 }
 
+section{
+    padding-top: 10em;
+    padding-left: 15px;
+}
+
 .desktop-main{
     position: absolute;
-    width: 35%;
+    width: 40%;
     height: 100%;
 }
 
 .mobile-main{
+    position: absolute;
     display: none;
-    width: 375px;
+    min-width: 767px;
+    min-height: 13px;
 }
 
 .container{
@@ -69,14 +76,14 @@ body{
     border-radius: 12px;
     box-shadow: rgba(0,0,0,0.2) 0px 20px 30px;
 }
-
+ 
 .card-front{left: 210px; top: 130px;}
 .card-back{left: 280px; bottom: 130px;}
 
 
 .card-logo,.card-number-display,
 .cardholder-display,.expiry-month-display,
-.expiry-year-display,.expiry-year-display{
+.expiry-year-display,.expiry-divider-display{
     position: absolute;
 }
 
@@ -113,7 +120,11 @@ body{
     right: 30px;
     font-size: 0.9em;
 }
-
+.expiry-divider-display{
+    bottom: 30px;
+    right: 75px;
+    font-size: 0.9em;
+}
 .cvc-display{
     position: absolute;
     right: 60px;
@@ -124,8 +135,7 @@ body{
 
 form{
     height: 350px;
-    padding-top: 10em;
-    padding-left: 15px;
+
 }
 
 label{
@@ -139,8 +149,15 @@ label{
 label .card-number, label .expiry-date, label .cvc{
     margin-top: 30px;
 }
-
 input{
+    width: 350px;
+    padding: 10px 10px;
+    border: 1px solid hsla(279, 6%, 55%, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus{
     outline: 0px solid hsl(249, 99%, 64%);
     border-top-color: hsl(249, 99%, 64%);
     border-right-color: hsl(278, 94%, 30%);
@@ -153,6 +170,7 @@ input::placeholder{font-weight: 300;}
 #errorMsg,#card-num-error,#expiry-error,#error-cvc{
     color: hsl(0, 0%, 100%);
     font-size: 12px;
+    font-weight: 500;
     padding-top: 2px;
     padding-left: 2px;
 }
@@ -174,6 +192,7 @@ letter-spacing: 1px;
 
 .flex .cvc{
     width: 135px;
+    margin-top: 0;
 }
 
 input .expiry, input .cvc{margin-top: 5px;}
@@ -200,6 +219,7 @@ button:hover{
     background-color: hsl(278, 68%, 11%, 0.8);
 }
 
+.hidden{display: none;}
 
 @media screen and (max-width:1024px) {
 

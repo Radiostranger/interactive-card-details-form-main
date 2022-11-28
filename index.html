@@ -15,7 +15,7 @@
 </head>
 <body>
   <img src="images/bg-main-desktop.png" alt="" class="desktop-main">
-  <img src="images/main-mobile.png" alt="" class="mobile-main">
+  <img src="images/mainmobile.png" alt="" class="mobile-main">
 
 <div class="container">
   <section class="card-display">
@@ -25,10 +25,10 @@
       <img src="images/card-logo.svg" alt="" class="card-logo">
 
       <p class="card-number-display"> 0000 0000 0000 0000</p>
-      <p class="cardholder-display"> Jane Appleseed</p>
-      <p class="expiry-month-display"> </p>
+      <p class="cardholder-display"> Ikechukwu Albert</p>
+      <p class="expiry-month-display">00</p>
       <p class="expiry-divider-display"></p>
-      <p class="expiry-year-display">00/00</p>
+      <p class="expiry-year-display">0000</p>
     </div>
     <div class="card-back">
       <img src="images/bg-card-back.png" alt="" class="card-back-img">
@@ -44,7 +44,7 @@
       class="cardholder-name"
       type="text"
       name="cardholder-name"
-      placeholder="e.g. Jane Appleseed"
+      placeholder="e.g. Ikechukwu Albert"
       oninput="inputName()">
     <p id="errorMsg"></p>
 
@@ -55,7 +55,8 @@
       type="text"
       name="card-number"
       placeholder="e.g. 1234 5678 9123 0000"
-      oninput="inputCardNumber()">
+      oninput="inputCardNumber()"
+      required>
 <p id="card-num-error"></p>
 
 
@@ -69,14 +70,18 @@
       type="text"
       name="expiry-date"
       placeholder="MM"
-      oninput="inputMM()">
+      oninput="inputMM()"
+      maxlength="2"
+      required>
 
       <input
       class="expiry"
       type="text"
       name="expiry-date"
-      placeholder="YYYY"
-      oninput="inputYY()">
+      placeholder="YY"
+      oninput="inputYY()"
+      maxlength="2"
+      required>
 
       <p id="expiry-error"></p>
       </label>
@@ -86,10 +91,13 @@
         <input
         id="cvc"
       class="cvc"
-      type="number"
+      type="text"
       name="cvc"
       placeholder="e.g. 123"
-      oninput="inputCvc()">
+      oninput="inputCvc()"
+      maxlength="3"
+      required
+      >
       <p id="error-cvc"></p>
   </label>
 
