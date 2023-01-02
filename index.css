@@ -20,7 +20,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: left;
+    /* justify-content: left; */
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
 
@@ -111,7 +111,7 @@ section{
 
 .expiry-month-display{
     bottom: 30px;
-    right: 85px;
+    right: 105px;
     font-size: 0.9em;
 }
 
