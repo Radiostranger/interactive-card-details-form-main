@@ -69,6 +69,8 @@ section{
 
 .card-front,.card-back{
     position: absolute;
+    
+    width: -moz-fit-content;
     width: fit-content;
 }
 
